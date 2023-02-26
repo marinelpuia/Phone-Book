@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts>
 	<contact>
-		<first_name>Aura</first_name>
-		<last_name>Decianu</last_name>
-		<phone_number>0040 723730334</phone_number>
+		<first_name>First</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0040 711111111</phone_number>
 		<notes>Sister</notes>
 	</contact>
 	<contact>
-		<first_name>Marinel</first_name>
-		<last_name>Puia</last_name>
-		<phone_number>0044 7855045792</phone_number>
-		<notes>Nr. meu vechi de Anglia</notes>
+		<first_name>Second</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0044722222222</phone_number>
+		<notes>My old number</notes>
 	</contact>
 	<contact>
-		<first_name>Nikoleta</first_name>
-		<last_name>Puia</last_name>
-		<phone_number>0044 7943128897</phone_number>
+		<first_name>Third</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0040733333333</phone_number>
 		<notes>Iubita</notes>
 	</contact>
 	<contact>
-		<first_name>Rodica</first_name>
-		<last_name>Puia</last_name>
-		<phone_number>0040 740566631</phone_number>
+		<first_name>Fort</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0040744444444</phone_number>
 		<notes>Mama</notes>
 	</contact>
 	<contact>
-		<first_name>Nicu</first_name>
-		<last_name>Decianu</last_name>
-		<phone_number>0040 722732509</phone_number>
-		<notes>Cumnatu</notes>
+		<first_name>Fifth</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0040755555555</phone_number>
+		<notes>Tata</notes>
 	</contact>
 	<contact>
-		<first_name>Ilinca</first_name>
-		<last_name>Eftenaru</last_name>
-		<phone_number>0040 72585431</phone_number>
-		<notes>Matusa</notes>
+		<first_name>Sixt</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0040766666666</phone_number>
+		<notes>Friend</notes>
 	</contact>
 	<contact>
-		<first_name>Nelu</first_name>
-		<last_name>Eftenaru</last_name>
-		<phone_number>0040 762114298</phone_number>
-		<notes>Unchiu</notes>
+		<first_name>Seventh</first_name>
+		<last_name>Contact</last_name>
+		<phone_number>0040777777777</phone_number>
+		<notes>Friend</notes>
 	</contact>
 </contacts>

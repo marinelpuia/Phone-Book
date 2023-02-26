@@ -1,13 +1,7 @@
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.Label?>
 <BorderPane id="borderPane" fx:controller="sample.Controller"
             xmlns:fx="http://javafx.com/fxml" stylesheets="@styles.css"
             fx:id="mainPanel">
@@ -59,6 +53,7 @@
         </TableView>
     </center>
     <bottom>
-        <Label id="copyRight" fx:id="copyRightLabel" BorderPane.alignment="BOTTOM_RIGHT" text="Drepturi de autor Marinel" textFill="black"/>
+        <Label id="copyRight" fx:id="copyRightLabel" BorderPane.alignment="BOTTOM_RIGHT"
+               text="Drepturi de autor Marinel" textFill="black"/>
     </bottom>
 </BorderPane>
