@@ -1,0 +1,184 @@
+// MAIN WINDOW
+
+#borderPane {
+    //-fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-background-color: linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%);
+
+}
+
+// TOP
+
+.menu-bar {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+}
+
+.menu {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+}
+
+.menu .label {
+    -fx-text-fill: white;
+    -fx-padding: 2px 6px 2px 6px;
+}
+.menu .label:hover {
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: red;
+}
+
+.menu-item {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-text-fill: white;
+    -fx-border-insets: 1px;     /* create margin */
+    -fx-background-insets: 1px; /* create margin */
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: red;
+}
+
+.context-menu {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.111111em 0.083333em; /* 4 1 8 1 */
+    /*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    /*    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin"; */
+}
+
+// CENTER
+
+/* table view */
+.table-view {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-border-color: #ffffff;
+    -fx-border-top-insets: 1px;    /* create margin */
+    -fx-border-bottom-insets: 1px; /* create margin */
+    -fx-background-insets: 0.5px;  /* create margin */
+}
+
+/* table column */
+.table-column {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-border-top-insets: 1px;    /* create margin */
+    -fx-border-bottom-insets: 1px; /* create margin */
+    -fx-background-insets: 0.5px;  /* create margin */
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #ffffff;
+    -fx-border-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-border-top-insets: 1px;    /* create margin */
+    -fx-border-bottom-insets: 1px; /* create margin */
+    -fx-background-insets: 0.5px;  /* create margin */
+}
+.table-view .column-header-background .label{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-border-color: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* table cell */
+.table-view .cell{
+  -fx-cell-size: 35;
+  -fx-text-fill: #ffffff;
+  -fx-alignment: CENTER_LEFT;
+  -fx-background-color: transparent;
+  -fx-border-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+  -fx-border-width: 0.2px;
+  -fx-font-weight: bold;
+}
+
+.table-view .cell:empty{
+  -fx-background-color: #ffffff;  /* #29292D; */
+  -fx-border-color: transparent; /*   #29292D; */
+  -fx-border-width: 0px;
+}
+
+/* table row cell even and odd hover*/
+.table-view .cell:even:hover {
+    -fx-background-color: #5E5151;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.table-view .cell:odd:hover {
+    -fx-background-color: #4E4343;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* table row cell empty even and odd */
+.table-view .cell:empty:even{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+.table-view .cell:empty:odd {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* table table-row-cell selected */
+.table-view .table-row-cell:selected {
+   -fx-background-color: red;
+   -fx-text-fill: #ffffff;
+}
+.table-view .table-row-cell:filled:focused {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+    -fx-text-fill: #ffffff;
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	/*-fx-border-color:derive( #000000,80%);  #6622CC */
+    -fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    /*-fx-background-color:derive( #000000,90%);  #6622CC */
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+// BOTTOM
+
+#copyRight {
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
+    -fx-padding: 5,0,0,5;
+    -fx-border-insets: 1px;      /* create margin */
+    -fx-background-insets: 1px;  /* create margin */
+    -fx-font: 12 "Time New Roman";
+    -fx-text-fill: white;
+}

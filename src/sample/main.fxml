@@ -1,0 +1,59 @@
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane id="borderPane" fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@styles.css"
+            fx:id="mainPanel">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Menu">
+                    <MenuItem text="New Contact" onAction="#showAddContactDialog"/>
+                    <MenuItem text="Edit Contact" onAction="#showEditContactDialog"/>
+                    <MenuItem text="Delete Contact" onAction="#deleteContact"/>
+                    <MenuItem text="Author Website" onAction="#showMyBlog"/>
+                </Menu>
+                <Menu text="Exit">
+                    <MenuItem text="Shut Down" onAction="#exitTheProgram"/>
+                </Menu>
+            </MenuBar>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="contactsTable">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn text="First Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstName"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Phone Number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phoneNumber"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Notes">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="notes"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <Label id="copyRight" fx:id="copyRightLabel" BorderPane.alignment="BOTTOM_RIGHT"
+               text="Drepturi de autor Marinel" textFill="black"/>
+    </bottom>
+</BorderPane>
